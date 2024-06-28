@@ -2,6 +2,7 @@ import React from 'react'
 import "./Hero.css"
 import logo from "../../assets/logo (2).png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Resume from "../../assets/Bharat's Resume.pdf"
 
 const Hero = () => {
     return (
@@ -13,8 +14,8 @@ const Hero = () => {
                 Node.js, Express.js, and MongoDB.
             </p>
             <div className="hero-action">
-                <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-                <div className="hero-resume">Resume</div>
+            <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="hero-connect">Connect With Me</div></AnchorLink>
+                <a href={Resume} className='anchor-link' offset={50} target='_blank'> <div className="hero-resume">Resume</div></a>
             </div>
         </div>
     )
